@@ -165,6 +165,8 @@ function valider(index){
     nomVoiture.style.display = "block"
     iconeModifier.style.display = "block"
     document.getElementById("v"+index[1]).textContent = document.getElementById("n"+index[1]).value
+    // localStorage.removeItem("key"+index[1])
+    // localStorage.setItem("key"+index[1], document.getElementById("n"+index[1]).value)
     
 }
 
