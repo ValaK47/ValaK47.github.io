@@ -141,6 +141,10 @@ header{
 	background-color: rgb(255, 255, 255, 1);	
 }
 
+.image{
+	width: 80%;
+}
+
 .div_btn{
 	display: flex;
 	flex-direction: row;
@@ -148,22 +152,31 @@ header{
 	align-items: center;
 }
 
-#suppression{
+.suppression{
 		width: 20%;
 		transition: 0.4;
 		margin-left: 25px;
 }
 
-#suppression:hover{
+.suppression:hover{
 	transform: scale(1.2);
 }
 
-#modifier{
+.modifier{
 	width: 25px;
 	transition: 0.4;
 }
 
-#modifier:hover{
+.modifier:hover{
+	transform: scale(1.2);
+}
+
+.valider{
+	width: 35px;
+	transition: 0.4;
+}
+
+.valider:hover{
 	transform: scale(1.2);
 }
 
@@ -172,9 +185,6 @@ header{
 	margin: 0 5px 0 5px ;
 }
 
-.element img{
-	width: 80%;
-}
 
 /* mise en place API */
 .API{
