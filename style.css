@@ -1,0 +1,205 @@
+/* reset css m'a permi de mieux les div
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background: url(https://www.carscoops.com/wp-content/uploads/2021/07/2022-F1-Car-5.jpg) no-repeat center 0;
+	font-family: 'Roboto';
+    overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+header{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: white;
+	height: 100px;
+	position: absolute;
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 1000px;
+}
+
+#logo{
+	width: 20%;
+	margin-top: 50px;
+	border-radius: 30px;
+}
+
+.background{
+	width: 100%;
+	height: 100%;
+}
+
+#choix{
+	width: 80%;
+	height: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(0, 0, 0, 0.70);
+	border-radius: 30px;
+}
+
+#selection{
+	margin: 20px 0 0 0;
+}
+
+#choix label{
+	color: white;
+	margin: 0 10px 0 0
+}
+
+#erreur{
+	color: rgb(253, 61, 61);
+}
+
+#valider{
+	color: rgb(4, 235, 4);
+}
+
+#voitures{
+	width: 80%;
+	height: 400px;
+	margin: 20px 0 0 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+/* mise en place de la div pour les voiture */
+.element{
+	width: 20%;
+	height: 350px;
+	margin: 0 10px 0 10px;
+	background-color: rgb(255, 255, 255, 0.8);	
+	float: left bottom;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+	transition: 0.4s;
+	
+}
+
+.element:hover{
+	cursor: pointer;
+	transform: scale(1.1);
+	background-color: rgb(255, 255, 255, 1);	
+}
+
+.div_btn{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#suppression{
+		width: 20%;
+		transition: 0.4;
+		margin-left: 25px;
+}
+
+#suppression:hover{
+	transform: scale(1.2);
+}
+
+#modifier{
+	width: 25px;
+	transition: 0.4;
+}
+
+#modifier:hover{
+	transform: scale(1.2);
+}
+
+
+#equipe{
+	margin: 0 5px 0 5px ;
+}
+
+.element img{
+	width: 80%;
+}
+
+/* mise en place API */
+.API{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	height: 15%;
+}
+
+#result{
+	color: white;
+	display: none;
+	margin: 0 5px 0 5px;
+}
+
+.resultat{
+	display: flex;
+	color: white;
+	margin: 0 10px 0 10px;
+	
+}
+
+.ram{
+	display: flex;
+	flex-direction: row;
+}

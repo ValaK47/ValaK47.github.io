@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet web Front: F1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<header>
+    <img id="logo" src=".\images\f1-logo.png" alt="logo f1">
+</header>
+<body>
+    <div class="container">
+        <div id="choix">
+            <div id="selection">
+                <form action="#" method="get">
+                    <select id="equipe">
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Ferrarie">Ferrarie</option>
+                        <option value="Red Bull">Red Bull</option>
+                        <option value="Alphatauri">Alphatauri</option>                
+                        <option value="Alfa Romeo">Alfa Romeo</option>
+                        <option value="Mclaren">Mclaren</option>
+                        <option value="Aston Martin">Aston Martin</option>
+                        <option value="Alpine">Alpine</option>
+                        <option value="Williams">Williams</option>
+                        <option value="Haas">Haas</option>
+                    </select>
+                    <input type="text" id="car_name" placeholder="Your car name" required>
+                    <button type="button" onclick="ajouteDiv()">Ajouter</button>
+                </form>
+            </div>
+            <div id="voitures"></div>
+            <div class="API">
+                <button id="ram" onclick="result.style.display='flex'">afficher la memoire</button>
+                <div class="ram">
+                    <p class="resultat">your device is using <b id="result">unknown</b> GiB of RAM</p>
+                </div>
+                <button id="fullscreen" type="button" onclick="fullscreen()">Passer en pleine écran</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
